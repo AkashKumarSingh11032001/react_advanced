@@ -8,8 +8,8 @@ const ErrorExample = () => {
 
   return (
     <>
-      <h1>{count}</h1>
-      <button type="button" onClick={OnIncrement}>Increment</button>
+      <h2>{count}</h2>
+      <button type="button" className="btn" onClick={OnIncrement}>Increment</button>
     </>
   );
 };
