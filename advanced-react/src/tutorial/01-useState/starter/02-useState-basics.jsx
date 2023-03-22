@@ -4,15 +4,21 @@ import { useState } from "react";
 const UseStateBasics = () => {
   const [count, setCount] = useState(0);
 
-  const handleClick = () => {
-    setCount(count+1);
-  }
+  const handleClick_Increment = () => {
+    setCount(count + 1);
+  };
+  const handleClick_Decrement = () => {
+    setCount(count - 1);
+  };
   return (
     <>
       <h2>current Count : {count}</h2>
-      <button type="button" className="btn" onClick={handleClick}>
-        Increment
-      </button>
+        <button type="button" className="btn" onClick={handleClick_Increment}>
+          Increment
+        </button>
+        <button type="button" className="btn" onClick={handleClick_Decrement}>
+          Decrement
+        </button>
     </>
   );
 };
